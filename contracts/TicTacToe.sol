@@ -4,7 +4,7 @@ import "../node_modules/@openzeppelin/contracts/utils/Counters.sol";
 
 pragma solidity ^0.8.0;
 
-contract Bet is ERC1155 {
+contract TicTacToe is ERC1155 {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
 

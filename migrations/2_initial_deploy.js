@@ -1,7 +1,10 @@
-const Bet = artifacts.require("Bet");
+const TicTacToe = artifacts.require("TicTacToe");
 const Moralis = artifacts.require("Moralis");
 
 module.exports = function (deployer) {
-  deployer.deploy(Bet);
+  // Deploy tic tac toe contract
+  deployer.deploy(TicTacToe);
+
+  // Deploy erc20 contract and send ourselves balance
   deployer.deploy(Moralis);
 };
