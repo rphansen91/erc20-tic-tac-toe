@@ -39,6 +39,7 @@ contract TicTacToe is ERC1155 {
         Game storage g = games[newGameId];
         g.isSet = true;
         restart(newGameId);
+        g.player0 = msg.sender;
         g.balance0 = balance;
         Start(newGameId, msg.sender, token, balance);
     }
